@@ -535,6 +535,10 @@ a {
   width: 36.25%;
 }
 
+.product__media {
+  user-select: none;
+}
+
 .product__feature {
   margin-top: 60px;
 }
@@ -566,3 +570,121 @@ a {
   box-shadow: 10px 10px 0 #fff;
 }
 
+/*========================== question ==========================*/
+
+.question {
+  padding-top: 445px;
+  text-align: center;
+  position: relative;
+}
+
+.question::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%) skewY(-12.12deg);
+  width: calc(100vw + 74px);
+  height: 200%;
+  background-color: var(--dark-color);
+  z-index: -4;
+}
+
+.question__heading {
+  font-size: 60px;
+  color: #fff;
+}
+
+.question__desc {
+  margin-top: 14px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.question__list {
+  margin-top: 90px;
+  display: grid;
+  row-gap: 24px;
+}
+
+.question-item {
+  height: fit-content;
+  padding: 66px 50px 66px 60px;
+  border-radius: 60px;
+  background-color: #fff;
+  display: flex;
+  text-align: start;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.question-item__content {
+  width: 88.75%;
+}
+
+.question-item__heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.question-item__answer {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--dark-color);
+  opacity: 0;
+  display: none;
+}
+
+.question-item__action {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.question-item__action:hover {
+  background-color: var(--primary-color);
+}
+
+.question-item__action:hover .question-item__add,
+.question-item__action:hover .question-item__remove {
+  color: #fff;
+}
+
+.question-item__add,
+.question-item__remove {
+  color: var(--primary-color);
+  transition: 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.question-item__remove {
+  display: none;
+}
+
+.question-item:has(input:checked) {
+  height: fit-content;
+}
+
+.question-item:has(input:checked) .question-item__answer {
+  opacity: 1;
+  display: block;
+}
+
+.question-item:has(input:checked) .question-item__add {
+  display: none;
+}
+
+.question-item:has(input:checked) .question-item__remove {
+  display: block;
+}
