@@ -483,6 +483,7 @@ a {
   margin-top: 24px;
   font-size: 24px;
   font-weight: 700;
+  color: var(--dark-color);
 }
 
 .comment__btn {
@@ -687,4 +688,54 @@ a {
 
 .question-item:has(input:checked) .question-item__remove {
   display: block;
+}
+
+/*========================== footer ==========================*/
+footer{
+  margin-top: 554px;
+  padding: 0 32.5px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.footer-top::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 107.1%;
+  display: block;
+  border: 1px solid #2626261F
+}
+
+.footer-top__cta{
+  width: 44.5%;
+}
+
+.footer-bottom{
+  padding: 40px 13px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright{
+font-size: 20px;
+font-weight: 600;
+color: var(--dark-color);
+}
+
+.footer__policy{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-decoration-line: underline;
+  color: var(--dark-color);
 }
