@@ -42,6 +42,7 @@ a {
   justify-content: space-between;
   align-items: center;
   transition: 0.1s;
+  user-select: none ;
 }
 
 .btn__content {
@@ -95,6 +96,7 @@ a {
   height: calc(100% - 32px);
   object-fit: cover;
   transform: translate(-50%, -50%);
+  user-select: none;
 }
 
 .header__language {
@@ -105,6 +107,7 @@ a {
   align-items: center;
   background-color: transparent;
   border: none;
+  user-select: none;
 }
 
 .header__language--flag {
@@ -168,6 +171,7 @@ a {
 .feature__icon {
   width: 24.96px;
   height: 24.96px;
+  user-select: none;
 }
 
 .feature__content {
@@ -183,6 +187,7 @@ a {
 .hero-media {
   width: 50%;
   object-fit: cover;
+  user-select: none;
 }
 
 /*========================== intro ==========================*/
@@ -233,6 +238,7 @@ a {
 .intro__media {
   width: 50%;
   object-fit: cover;
+  user-select: none;
 }
 
 .intro__btn {
@@ -354,6 +360,7 @@ a {
   display: inline-block;
   height: 50px;
   object-fit: cover;
+  user-select: none;
 }
 
 .benefit-item__icon:first-of-type {
@@ -464,6 +471,7 @@ a {
   width: 29.5%;
   object-fit: cover;
   border-radius: 50%;
+  user-select: none;
 }
 
 .comment__desc {
@@ -486,6 +494,7 @@ a {
 .comment__previous,
 .comment__next {
   cursor: pointer;
+  user-select: none;
   height: 40px;
   border: none;
   background-color: transparent;
