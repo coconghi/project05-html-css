@@ -583,7 +583,7 @@ a {
   content: "";
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 11%;
   transform: translate(-50%, -50%) skewY(-12.12deg);
   width: calc(100vw + 74px);
   height: 200%;
@@ -606,11 +606,12 @@ a {
   margin-top: 90px;
   display: grid;
   row-gap: 24px;
+  transition: all 0.5s linear;
 }
 
 .question-item {
-  height: fit-content;
-  padding: 66px 50px 66px 60px;
+  max-height: 192px;
+  padding: 60px 50px 66px 60px;
   border-radius: 60px;
   background-color: #fff;
   display: flex;
@@ -619,25 +620,36 @@ a {
   justify-content: space-between;
   overflow: hidden;
   position: relative;
+  transition: all 1s ease-in-out;
+
 }
 
 .question-item__content {
   width: 88.75%;
+  align-self: stretch;
 }
 
 .question-item__heading {
+  text-align: start;
   font-size: 30px;
   font-weight: 700;
   color: var(--dark-color);
+  transition: all 1s ease-in-out;
+
 }
 
-.question-item__answer {
-  margin-top: 20px;
-  font-size: 30px;
+.question-item__answer{
+  font-size: 25px;
   font-weight: 400;
   color: var(--dark-color);
+  visibility: collapse;
   opacity: 0;
-  display: none;
+  transform: translateY(100%);
+  transition: all 1s ease-in-out;
+}
+
+.question-item__answer>td{
+  padding-top: 20px;
 }
 
 .question-item__action {
@@ -674,12 +686,13 @@ a {
 }
 
 .question-item:has(input:checked) {
-  height: fit-content;
+  max-height: 1000px;
 }
 
 .question-item:has(input:checked) .question-item__answer {
+  transform: translateY(0);
+  visibility: visible;
   opacity: 1;
-  display: block;
 }
 
 .question-item:has(input:checked) .question-item__add {
@@ -691,12 +704,12 @@ a {
 }
 
 /*========================== footer ==========================*/
-footer{
+footer {
   margin-top: 554px;
   padding: 0 32.5px;
 }
 
-.footer-top{
+.footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -704,7 +717,7 @@ footer{
   position: relative;
 }
 
-.footer-top::after{
+.footer-top::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -712,27 +725,27 @@ footer{
   transform: translateX(-50%);
   width: 107.1%;
   display: block;
-  border: 1px solid #2626261F
+  border: 1px solid #2626261f;
 }
 
-.footer-top__cta{
+.footer-top__cta {
   width: 44.5%;
 }
 
-.footer-bottom{
+.footer-bottom {
   padding: 40px 13px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer__copyright{
-font-size: 20px;
-font-weight: 600;
-color: var(--dark-color);
+.footer__copyright {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark-color);
 }
 
-.footer__policy{
+.footer__policy {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.7;
