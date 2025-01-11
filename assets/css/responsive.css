@@ -1,0 +1,231 @@
+@media (max-width: 1615px) {
+  /* ======================common====================== */
+  /* body {
+    background-color: aqua;
+  } */
+
+  .btn {
+    width: 260px;
+    height: 63px;
+    padding: 17px 24px;
+  }
+  .btn__content {
+    font-size: 19px;
+  }
+  .btn__icon {
+    width: 21px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .desc {
+    font-size: 17px;
+  }
+
+  .feature__content {
+    font-size: 17px;
+  }
+  .feature__icon {
+    width: 21.96px;
+  }
+
+  .item {
+    padding: 13.5px 19px;
+    width: 185px;
+  }
+  /* ======================header====================== */
+
+  .header__searchbar {
+    margin-top: 30px;
+    padding: 23px 24px;
+  }
+  .header__logo {
+    height: calc(100% - 30px);
+  }
+
+  .hero {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+  .hero__desc {
+    font-size: 20px;
+  }
+
+  .hero__heading {
+    font-size: 47px;
+  }
+  .cursor-effect {
+    height: 56px;
+  }
+
+  .hero__feature-list {
+    gap: 10px;
+  }
+
+  .hero__features {
+    margin-top: 40px;
+  }
+  .hero-media {
+    width: 45%;
+  }
+  .hero__btn {
+    margin-top: 40px;
+  }
+
+  /* ======================introduction====================== */
+  .intro {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .intro__media {
+    width: 45%;
+  }
+  .intro__content {
+    width: 510px;
+  }
+  .intro__desc {
+    margin-top: 64px;
+  }
+
+  .intro__btn {
+    margin-top: 28px;
+  }
+  .intro::before {
+    top: 62%;
+  }
+
+  /* ======================benefit====================== */
+
+  .benefit {
+    padding-top: 180px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .benefit__list {
+    gap: 25px;
+  }
+
+  .benefit-item {
+    width: 262px;
+    height: 303px;
+    border-radius: 40px;
+    padding: 24px;
+  }
+
+  .benefit-item__icon:first-of-type {
+    height: 50px;
+  }
+  .benefit-item__no {
+    font-size: 68px;
+  }
+  .benefit-item__heading {
+    margin-top: 0px;
+    font-size: 22px;
+  }
+  .benefit-item__desc {
+    margin-top: 13px;
+    font-size: 17px;
+  }
+  .benefit-item__desc em {
+    font-size: 18px;
+  }
+  .benefit-item-2,
+  .benefit-item-4 {
+    transform: translateY(92px);
+  }
+
+  /* ======================comment====================== */
+  .comment {
+    margin-top: 231px;
+    padding: 49px 100px;
+    height: 411px;
+    border-radius: 60px;
+    column-gap: 50px;
+  }
+  .comment__content {
+    width: 70%;
+  }
+
+  .comment__desc {
+    margin-top: 20px;
+  }
+  .comment__customer {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+  .comment__previous--img,
+  .comment__next--img {
+    height: 10px;
+  }
+  .comment__btn {
+    margin-top: 20px;
+    column-gap: 0px;
+  }
+  .comment__avatar {
+    width: 25.5%;
+  }
+
+  /* ======================product====================== */
+  .product {
+    padding: 100px 20px 0 40px;
+  }
+  .product__content {
+    width: 43.25%;
+  }
+  .product__media {
+    width: 45%;
+  }
+  .product__feature,
+  .product__btn {
+    margin-top: 35px;
+  }
+  .product::after {
+    top: -13%;
+  }
+
+  /* ======================question====================== */
+  .question {
+    padding-top: 230px;
+  }
+
+  .question__list {
+    margin-top: 60px;
+    row-gap: 20px;
+  }
+  .question-item {
+    max-height: 104px;
+    padding: 30px 36px;
+    border-radius: 38px;
+  }
+
+  .question-item__action {
+    width: 47px;
+    height: 47px;
+  }
+  .question-item__heading {
+    font-size: 21px;
+  }
+  .question-item__answer > td {
+    padding-top: 8px;
+  }
+  .question-item__answer {
+    font-size: 17px;
+  }
+  .question::before {
+    top: 18%;
+  }
+  /* ======================footer====================== */
+
+  footer {
+    margin-top: 400px;
+  }
+  .footer__copyright,
+  .footer__policy {
+    font-size: 15px;
+  }
+}
