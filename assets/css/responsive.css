@@ -1,4 +1,6 @@
-@media (max-width: 1440px) and (min-width:1150px) {
+/* and (min-width:1150px)  */
+
+@media (max-width: 1500px) {
   /* ======================common====================== */
 
   .btn {
@@ -225,4 +227,31 @@
   .footer__policy {
     font-size: 15px;
   }
+  .footer-bottom {
+    padding: 27px 13px 44px;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 300px) {
+  /* ======================common====================== */
+.container{
+  max-width: calc(100% - 40px);
+}
+  /* ======================header====================== */
+
+  .header__searchbar {
+    margin-top: 60px;
+    padding: 19px 15px;
+  }
+  .header__logo {
+    height: calc(100% - 22px);
+  }
+  .hero{
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .hero-media {
+    width: 90%;
+
+}
 }
