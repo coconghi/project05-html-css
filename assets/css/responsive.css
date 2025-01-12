@@ -2,7 +2,9 @@
 
 @media (max-width: 1500px) {
   /* ======================common====================== */
-
+  body {
+    background-color: aqua;
+  }
   .btn {
     width: 260px;
     height: 63px;
@@ -234,9 +236,9 @@
 
 @media (max-width: 860px) and (min-width: 300px) {
   /* ======================common====================== */
-.container{
-  max-width: calc(100% - 40px);
-}
+  .container {
+    max-width: calc(100% - 40px);
+  }
   /* ======================header====================== */
 
   .header__searchbar {
@@ -246,12 +248,11 @@
   .header__logo {
     height: calc(100% - 22px);
   }
-  .hero{
+  .hero {
     flex-direction: column-reverse;
     margin-top: 0;
   }
   .hero-media {
     width: 90%;
-
-}
+  }
 }
