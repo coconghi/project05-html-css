@@ -430,7 +430,7 @@ a {
   background-color: #fff;
   display: flex;
   align-items: center;
-  column-gap: 72px;
+  column-gap: 61px;
   overflow: hidden;
   position: relative;
 }
